@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestil din billet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <header class="page-header">
+        <a class="logo" href="./">
+            <img src="img/hotel.jpg" alt="hotel">
+        </a>
+        <div class="logo-type">
+            <h2>Hotels APS</h2>
+        </div>
+    </header>
+    <div class="wrap">
+        <h1 class="page-heading">Gennemfør bestilling</h1>
+
+        <form action="checkout.html" class="order-form" id="order-form">
+            <fieldset class="order-form-field">
+                <label for="destination" class="order-label">Destination</label>
+                <select name="destination" id="destination" class="input input-select">
+                    <option value="0" selected disabled>Vælg en destination</option>
+                </select>
+            </fieldset>
+            <fieldset class="order-form-field flex-field">
+                <label for="arival-date">Udrejse</label>
+                <input name="arival" type="date" class="input input-arival" id="arival-date">
+            </fieldset>
+            <fieldset class="order-form-field flex-field">
+                <label for="departure-date">Hjemrejse</label>
+                <input name="departure" type="date" class="input input-departure" id="departure-date">
+            </fieldset>
+            <fieldset class="order-form-field">
+                <label for="adults">Antal voksne</label>
+                <input name="adults" type="number" min="1" max="10" class="input input-number" id="adults" value="2">
+            </fieldset>
+            <fieldset class="order-form-field">
+                <label for="children">Børn (under 15)</label>
+                <input name="children" type="number" min="0" max="10" class="input input-number" id="children" value="0">
+            </fieldset>
+            <fieldset class="order-form-field">
+                <label for="pension">Pension</label>
+                <select name="pension" id="pension" class="input input-select">
+                    <option value="breakfast">Halvpension</option>
+                    <option value="full">Fuldpension</option>
+                </select>
+            </fieldset>
+            <fieldset class="order-form-field flex-field">
+                <label for="terms">Jeg har læst handelsbetingelserne</label>
+                <input name="terms" id="terms" type="checkbox" class="input input-check">
+            </fieldset>
+            <fieldset class="order-form-field order-form-field-delivery">
+                <h2>Faktureringsadresse</h2>
+                <input name="name" type="text" class="input input-text" id="delivery-name"
+                    placeholder="Fulde navn">
+                <br>
+                <input name="address" type="text" class="input input-text" id="delivery-address"
+                    placeholder="Gade og husnummer">
+                <br>
+                <input name="postal" type="text" class="input input-text" id="delivery-zip"
+                    placeholder="Postnummer">
+                <br>
+                <input name="city" type="text" class="input input-text" placeholder="By">
+                <br>
+                <input name="email" type="text" class="input input-email" placeholder="E-mail">
+            </fieldset>
+            <fieldset class="order-form-field">
+                <input type="submit" class="input input-submit" value="Bestil">
+            </fieldset>
+
+        </form>
+    </div>
+    <footer class="page-footer">
+        <div>
+            <h3 class="logo-type">Deals</h3>
+            <ul>
+                <li>Skiferier</li>
+                <li>Sol og sommer</li>
+                <li>Storbyrejser</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="logo-type">Om os</h3>
+            <ul>
+                <li>Kontakt</li>
+                <li>SoMe</li>
+                <li>TrustPilot</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="logo-type">Info</h3>
+            <ul>
+                <li>GDPR og Privatlivspolitik</li>
+                <li>Handelsbetingelser</li>
+                <li>Refunderinger</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="utility.js"></script>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

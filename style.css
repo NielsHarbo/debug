@@ -1,0 +1,97 @@
+/*Resets*/
+*{
+    box-sizing: border-box;
+}
+img,svg,video{
+    max-width:100%;
+    height:auto;
+}
+html, body{
+    margin:0;
+    padding:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
+}
+.bg{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(img/hotel.jpg);
+    filter: blur(18px);
+    -webkit-filter: blur(20px);
+    background-size: contain;
+    opacity: 0.5;
+}
+fieldset{
+    border:none;
+}
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+/* header & footer */
+.page-header, .page-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    background: #345163;
+    color: #fff;
+}
+.logo{
+    width:100px;
+}
+.logo-type{
+    color: bisque;
+    text-transform: uppercase;
+}
+/*page*/
+.wrap{
+    max-width: 700px;
+    margin:0 auto;
+    padding: 5px 15px;
+}
+
+/*Form*/
+.order-form{
+    padding-bottom: 15px ;
+}
+.flex-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input, 
+.print-btn{
+    padding:5px;
+}
+.input-text,
+.input-select,
+.input-number,
+.input-submit,
+.input-email {
+    width:100%;
+}
+.input-check{
+    transform: scale(1.5);
+    margin: 0;
+}
+
+.order-form-field-delivery>.input{
+    display: block;
+    margin-bottom: 5px;
+}
